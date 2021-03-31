@@ -2,7 +2,7 @@
 Super simple Python network sockets program.
 
 ## Requirements
-- Python 3.0 installed. 
+- Python 3.0 
 
 ## Commands
 - Run server:
