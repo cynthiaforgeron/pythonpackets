@@ -8,12 +8,10 @@ Super simple Python network sockets program.
 ```
 python3 packets.py server
 ```
-to start the server.
 4. In another terminal window, run
 ```
 python3 packets.py client localhost
 ```
-for a simple demo version of the client. 
 5. Follow the prompts on the client terminal window.
 
 ## Requirements
@@ -31,5 +29,4 @@ python3 packets.py client
 - Run client with localhost: 
 ```
 python3 packets.py client localhost
-``` 
-
+```
