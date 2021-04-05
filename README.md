@@ -15,6 +15,6 @@ python3 packets.py client
 ```
 - Run client with localhost: 
 ```
-python3 packets.py client home
+python3 packets.py client localhost
 ``` 
 
