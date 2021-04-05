@@ -1,7 +1,12 @@
-# Client process
+# Client
 
 import socket
 import sys
+
+# This handles the client process
+# Opens a socket, takes in the IP and payload from the command line
+# Encodes it, and sends it off to the server
+# If no message is received, the client times out after 5 seconds
 
 def client_process(msg, ip_destination):
     try:
@@ -12,5 +17,6 @@ def client_process(msg, ip_destination):
         print("Server at " + str(address[0]) + ", " + str(address[1]) + " replied:")
         print(data.decode("utf-8"))
         client_socket.close()
+    # This silences traceback on ctrl-break or ctrl-c
     except KeyboardInterrupt:
         sys.exit(0)
