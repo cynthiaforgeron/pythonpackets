@@ -8,7 +8,7 @@ def server_process():
         # Defines a UDP socket and binds to all interfaces
         while True:
             server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            server_socket.bind(('127.0.0.1', 1234))
+            server_socket.bind(('0.0.0.0', 1234))
             data,address = server_socket.recvfrom(4096)
             data = data.decode("utf-8")
             # Checks if message received can be converted to float
@@ -33,5 +33,3 @@ def server_process():
     # This silences traceback on ctrl-break or ctrl-c
     except KeyboardInterrupt:
         sys.exit(0)
-
-    
